@@ -1,5 +1,6 @@
 #Dropbox api
-*Dropbox API for laravel
+
+*Dropbox v2 API for laravel*
 
 ### Third party packages:
 * *guzzle: Handle XHR requests*
@@ -7,28 +8,24 @@
 ###Installation
 * Add This lines in your ```composer.json```
 
-    ``` "jeylabs/goto-meeting": "dev-master" ```
+    ``` "jeylabs/dropbox": "dev-master" ```
     ```
     "repositories": [
            {
              "type": "vcs",
-             "url": "https://github.com/jeylabs/goto-meeting"
+             "url": "https://github.com/jeylabs/dropbox"
            }
          ],
      ```
 
 * Publish the config file. <br>
 
-    ```php artisan vendor:publish --provider="Jeylabs\GoToMeeting\GoToMeetingServiceProvider"```
+    ```php artisan vendor:publish --provider="Jeylabs\DropBox\DropBoxServiceProvider"```
 
 ###Config
 ```php
 return [
-    'direct_user' => env("GOTO_DIRECT_USER"),
-    'consumer_key' => env("GOTO_CONSUMER_KEY"),
-    'consumer_secret' => env("GOTO_CONSUMER_SECRET"),
-    'user_password' => env("GOTO_DIRECT_USER_PASSWORD"),
-    'webinars_date_range' => env("DATE_RANGE", 1),
+    'access_token' => env("DROPBOX_ACCESS_TOKEN"),
 ];
 ```
 
