@@ -1,5 +1,5 @@
-#Goto meeting
-*Goto meeting V2 api for laravel*
+#Dropbox api
+*Dropbox API for laravel
 
 ### Third party packages:
 * *guzzle: Handle XHR requests*
